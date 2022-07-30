@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import News from "./News";
 
 export default class Navbar extends Component {
 
@@ -19,7 +20,12 @@ export default class Navbar extends Component {
                   <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/sports">sports</a>
+                  <a  onClick={()=>{return (<News
+                key="sports"
+                pageSize={9}
+                country={"in"}
+                category={"sports"}
+              />)}} className="nav-link active" aria-current="page" href="/sports">sports</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="/Business">Business</a>

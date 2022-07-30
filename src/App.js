@@ -9,8 +9,9 @@ export default class App extends Component {
     return (
       
       <div>
-        <BrowserRouter>
           <Navbar />
+          <News/>
+        {/* <BrowserRouter>
           <Routes>
             <Route  path="/"
               element={<News
@@ -69,7 +70,7 @@ export default class App extends Component {
               />}
             />
           </Routes>
-                </BrowserRouter>
+                </BrowserRouter> */}
       </div>
         
     );
