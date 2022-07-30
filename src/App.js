@@ -7,11 +7,12 @@ import { BrowserRouter, Routes, Route, Link, Router } from "react-router-dom";
 export default class App extends Component {
   render() {
     return (
+      
       <div>
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route exact path="/"
+            <Route  path="/"
               element={<News
                 key="general"
                 pageSize={9}
@@ -19,7 +20,7 @@ export default class App extends Component {
                 category={"general"}
               />}
             />
-            <Route exact path="/sports"
+            <Route  path="/sports"
               element={<News
                 key="sports"
                 pageSize={9}
@@ -68,8 +69,9 @@ export default class App extends Component {
               />}
             />
           </Routes>
-        </BrowserRouter>
+                </BrowserRouter>
       </div>
+        
     );
   }
 }
